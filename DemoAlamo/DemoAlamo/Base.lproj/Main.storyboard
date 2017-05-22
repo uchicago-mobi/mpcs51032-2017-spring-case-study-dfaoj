@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoAlamo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="peu-qp-aw6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD4-G4-9zd">
+                                <rect key="frame" x="41" y="70" width="293" height="547"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eME-wO-VB1">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-Fo-7wj">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="REQUEST">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KLd-Nt-sgr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruK-rH-SnK">
+                                                <rect key="frame" x="0.0" y="100" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="RESPONSE">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newResponse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8On-8K-xai"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfb-eG-Nwe">
+                                                <rect key="frame" x="0.0" y="200" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="JSON">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newJSON:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFz-al-WZb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7v-aA-VA0">
+                                                <rect key="frame" x="0.0" y="300" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="VALIDATE">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newValidation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuK-vu-ioZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="084-Sx-9Pw">
+                                                <rect key="frame" x="0.0" y="400" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="HEADER">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newHeader:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Olv-xV-YMG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-eO-x2Q">
+                                                <rect key="frame" x="0.0" y="500" width="293" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <state key="normal" title="AUTH">
+                                                    <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDL-wO-7rs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="PKo-Dj-MwL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eME-wO-VB1" secondAttribute="bottom" constant="347" id="Jap-IE-L5W"/>
+                                    <constraint firstItem="eME-wO-VB1" firstAttribute="width" secondItem="PD4-G4-9zd" secondAttribute="width" id="MEi-px-xyo"/>
+                                    <constraint firstAttribute="trailing" secondItem="eME-wO-VB1" secondAttribute="trailing" id="Xi7-q9-f8b"/>
+                                    <constraint firstItem="eME-wO-VB1" firstAttribute="top" secondItem="PD4-G4-9zd" secondAttribute="top" id="hxa-Xk-PFS"/>
+                                    <constraint firstItem="eME-wO-VB1" firstAttribute="leading" secondItem="PD4-G4-9zd" secondAttribute="leading" id="sdE-Hi-K6J"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PD4-G4-9zd" secondAttribute="bottom" constant="50" id="2Gq-Mq-cAM"/>
+                            <constraint firstItem="PD4-G4-9zd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="7Oa-Qx-W8L"/>
+                            <constraint firstItem="peu-qp-aw6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8cc-SK-DI2"/>
+                            <constraint firstItem="peu-qp-aw6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="PSd-ry-dLc"/>
+                            <constraint firstItem="peu-qp-aw6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dvL-VH-qYK"/>
+                            <constraint firstItem="peu-qp-aw6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="q9F-Mk-ufA"/>
+                            <constraint firstItem="PD4-G4-9zd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="sX6-Cn-3xP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PD4-G4-9zd" secondAttribute="trailing" constant="25" id="wra-1k-MMg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="peu-qp-aw6" id="SCI-Lr-LGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradient" width="2250" height="4002"/>
+    </resources>
+</document>
